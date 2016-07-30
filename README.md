@@ -1,6 +1,6 @@
 ###PluralSight Download Bookmarklet.
 
-####Just Drag and Drop following Link to bookmarks bar.
+####Just Drag and Drop following code to bookmarks bar.
 
 
 
