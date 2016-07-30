@@ -9,6 +9,6 @@ Works only for Current Video you are viewing on pluralsight video page. Make sur
 
 This will save url to txt file with Filename in format "CourseName_ModuleName_ClipName".txt
 
-Later you can download video with your favourite downloader ( eg: axel or wget)
+Later you can download video with your favourite downloader ( eg: curl or wget)
 
 Cheers !!
