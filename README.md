@@ -2,10 +2,7 @@
 
 ####Just Drag and Drop following code to bookmarks bar.
 
-  [PluralSight SaveAs]<DT><H3 ADD_DATE="1469891592" LAST_MODIFIED="1469891613">PluralSight SaveAs</H3>
-        <DL><p>
-            <DT><A HREF="javascript:(function(){var moduleName = document.getElementsByClassName(&quot;selected watched&quot;)[0].parentElement.parentElement.getElementsByTagName(&quot;h2&quot;)[0].innerText;var clipName = document.getElementsByClassName(&quot;selected watched&quot;)[0].getElementsByTagName(&quot;h3&quot;)[0].innerText;var link = document.createElement('a');link.download = document.title + &quot;_&quot; + moduleName + &quot;_&quot; + clipName;fileContents = document.getElementsByTagName('video')[0].src;link.href = 'data:,' + fileContents;link.click();})();" ADD_DATE="1469891423">Save Link Pluralsight Video</A>
-        </DL><p>
+  [PluralSight SaveAs]: javascript:(function(){var moduleName = document.getElementsByClassName(&quot;selected watched&quot;)[0].parentElement.parentElement.getElementsByTagName(&quot;h2&quot;)[0].innerText;var clipName = document.getElementsByClassName(&quot;selected watched&quot;)[0].getElementsByTagName(&quot;h3&quot;)[0].innerText;var link = document.createElement('a');link.download = document.title + &quot;_&quot; + moduleName + &quot;_&quot; + clipName;fileContents = document.getElementsByTagName('video')[0].src;link.href = 'data:,' + fileContents;link.click();})();
 
 ```javascript
 javascript:(function(){var moduleName = document.getElementsByClassName("selected watched")[0].parentElement.parentElement.getElementsByTagName("h2")[0].innerText;var clipName = document.getElementsByClassName("selected watched")[0].getElementsByTagName("h3")[0].innerText;var link = document.createElement('a');link.download = document.title + "_" + moduleName + "_" + clipName;fileContents = document.getElementsByTagName('video')[0].src;link.href = 'data:,' + fileContents;link.click();})();
