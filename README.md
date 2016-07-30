@@ -3,7 +3,7 @@
 ####Just create new bookmark in bookmarks bar with follwing code.
 
 ```javascript
-javascript:(function(){var moduleName = document.getElementsByClassName("selected watched")[0].parentElement.parentElement.getElementsByTagName("h2")[0].innerText;var clipName = document.getElementsByClassName("selected watched")[0].getElementsByTagName("h3")[0].innerText;var link = document.createElement('a');link.download = document.title + "_" + moduleName + "_" + clipName;fileContents = document.getElementsByTagName('video')[0].src;link.href = 'data:,' + fileContents;link.click();})();
+javascript:(function(){var moduleName = document.getElementsByClassName("selected watched")[0].parentElement.parentElement.getElementsByTagName("h2")[0].innerText;var clipName = document.getElementsByClassName("selected watched")[0].getElementsByTagName("h3")[0].innerText;var link = document.createElement('a');link.download = document.title + "||" + moduleName + "||" + clipName;fileContents = document.getElementsByTagName('video')[0].src;link.href = 'data:,' + fileContents;link.click();})();
 ```
 Works only for Current Video you are viewing on pluralsight video page. Make sure only current Module is expanded in Sidebar of Pluralsight Player.
 
