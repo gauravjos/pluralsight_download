@@ -7,7 +7,8 @@ javascript:(function(){var moduleName = document.getElementsByClassName("selecte
 ```
 Works only for Current Video you are viewing on pluralsight video page. Make sure only current Module is expanded in Sidebar of Pluralsight Player.
 
-This will save url to txt file with Filename in format "CourseName_ModuleName_ClipName".txt
+This will save url to csv file with Filename in format "CourseName_ModuleName_ClipName".csv and content in 
+"CourseName,ModuleNumber,ModuleName,ClipNumber,ClipName,ClipURL" format.
 
 Later you can download video with your favourite downloader ( eg: curl or wget)
 
