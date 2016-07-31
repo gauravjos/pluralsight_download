@@ -3,7 +3,7 @@
 ####Just create new bookmark in bookmarks bar with follwing code.
 
 ```javascript
-javascript:(function(){var moduleName = document.getElementsByClassName("selected watched")[0].parentElement.parentElement.getElementsByTagName("h2")[0].innerText;var clipName = document.getElementsByClassName("selected watched")[0].getElementsByTagName("h3")[0].innerText;var link = document.createElement('a');link.download = document.title + "_" + moduleName + "_" + clipName;fileContents = document.getElementsByTagName('video')[0].src;link.href = 'data:,' + fileContents;link.click();})();
+javascript:(function(){var module =  document.getElementsByClassName("selected watched")[0].parentElement.parentElement;var moduleName = module.getElementsByTagName("h2")[0].innerText;var clip = document.getElementsByClassName("selected watched")[0];var clipName = clip.getElementsByTagName("h3")[0].innerText;var clipIndex = 001;while( (clip = clip.previousSibling) != null ) clipIndex++;var moduleIndex = 001;while( (module = module.previousSibling) != null ) moduleIndex++; var clipFullName = document.title + "_" + moduleIndex + "_" + moduleName + "_" + clipIndex + "_" + clipName;var link = document.createElement('a');link.download = clipFullName+".csv";fileContents = document.title + "," + moduleIndex + "," + moduleName + "," + clipIndex + "," + clipName + "," + document.getElementsByTagName('video')[0].src;link.href = 'data:,' + fileContents;link.click();})();
 ```
 Works only for Current Video you are viewing on pluralsight video page. Make sure only current Module is expanded in Sidebar of Pluralsight Player.
 
