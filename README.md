@@ -9,7 +9,7 @@ Works only for Current Video you are viewing on pluralsight video page.
 
 This will save video and txt file with same Filename which contains clip name in "CourseName/ModuleName/ClipName" format.
 
-later you can simply generate folder structure using shell script below.
+later you can simply generate folder structure using shell script below.Assuming ls *.txt are all txtfiles download using bookmarklet.
 ```
 ls *.txt | while read i ; do  if [ ! -d $(cat "$i" | awk -F'/' '{print $1"/"$2}' | uniq) ] ; then mkdir -p "$(cat "$i" | awk -F'/' '{print $1"/"$2}' | uniq)" ; fi  ;cp -v $(basename "$i" ".txt").mp4 $(cat "$i").mp4 ;done
 ```
